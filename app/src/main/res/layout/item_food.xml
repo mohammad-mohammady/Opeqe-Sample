@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="53pt"
+                    android:layout_height="53pt"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imageViewFoodItem" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewTitleFoodItem" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/imageViewFoodItem"
+                    android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:textSize="16sp" android:textColor="@color/blue"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/textViewTypeFoodItem" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTitleFoodItem"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewFoodItem" android:layout_marginStart="16dp"/>
+            <TextView
+                    android:text="30-40 mins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14" app:layout_constraintStart_toEndOf="@+id/imageViewFoodItem"
+                    android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewRateFoodItem" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="32dp"/>
+            <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBarFoodItem"
+                    android:stepSize="0.01"
+                    style="?android:attr/ratingBarStyleSmall"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewRateFoodItem"
+                    app:layout_constraintStart_toStartOf="@+id/textViewRateFoodItem"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewRateFoodItem" android:layout_marginBottom="1dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textViewTypeFoodItem"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
