@@ -49,7 +49,7 @@ class HomePresenter: HomeContract.Presenter {
     override fun takeView(view: HomeContract.View) {
         mHomeView = view
         mHomeRepository = HomeRepository(HomeRemoteDataSource(), HomeLocalDataSource(mHomeView as Activity))
-        mHomeRepository.loadRestaurnts(object: HomeDataSource.LoadRestaurntsCallback{
+        mHomeRepository.loadRestaurnts(object: HomeDataSource.LoadRestaurntsCallback {
             override fun onLoadRestaurntsSuccess(response: ArrayList<FoodModel>) {
 
             }

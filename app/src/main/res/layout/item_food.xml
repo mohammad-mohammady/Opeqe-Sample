@@ -36,6 +36,8 @@
                     android:text="TextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
                     android:id="@+id/textViewTitleFoodItem" android:layout_marginTop="16dp"
                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/imageViewFoodItem"
                     android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
