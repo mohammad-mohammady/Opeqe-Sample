@@ -1,13 +1,16 @@
 package mohammad.mohammadi.opeqesample.ui.home.datasource
 
-import com.mapbox.mapboxsdk.geometry.LatLng
+import android.content.res.AssetManager
 import mohammad.mohammadi.opeqesample.model.FoodModel
 
 
 interface HomeDataSource
 {
 
-    fun loadRestaurnts(reverseGeoCallback: LoadRestaurntsCallback)
+    fun loadRestaurnts(
+        reverseGeoCallback: LoadRestaurntsCallback,
+        assetManager: AssetManager
+    )
 
     /////////////////////////////////////call backs//////////////////////////////////////
     interface LoadRestaurntsCallback {

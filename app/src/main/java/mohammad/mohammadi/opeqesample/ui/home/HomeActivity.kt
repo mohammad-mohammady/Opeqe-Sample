@@ -54,8 +54,8 @@ class HomeActivity : DaggerActivity,HomeContract.View {
     override fun onResume() {
         super.onResume()
         mPresenter.takeView(this)
-        mPresenter.loadRestaurant()
-        mPresenter.loadFood()
+        mPresenter.loadRestaurant(assets)
+        mPresenter.loadFood(assets)
     }
 
     override fun onDestroy() {

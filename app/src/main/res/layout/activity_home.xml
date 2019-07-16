@@ -33,7 +33,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent" android:id="@+id/recyclerViewRestaurant"
-                        android:layout_marginStart="4dp"/>
+                />
                 <androidx.recyclerview.widget.RecyclerView
                         android:layout_width="0dp"
                         android:paddingTop="4dp"

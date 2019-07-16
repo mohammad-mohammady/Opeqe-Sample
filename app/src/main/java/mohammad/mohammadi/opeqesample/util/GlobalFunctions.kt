@@ -20,16 +20,3 @@ infix fun Any?.ifNotNull(block: () -> Unit) {
     if (this != null) block()
 }
 
-fun loadJSONFromAssets(context: Context): String? {
-    var json: String? = null
-
-        val inputStream = context.getAssets().open("menu.json")
-        val size = inputStream.available()
-        val buffer = ByteArray(size)
-        inputStream.read(buffer)
-        inputStream.close()
-        json = String(buffer, charset("UTF-8"))
-
-
-    return json
-}

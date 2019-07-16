@@ -6,7 +6,6 @@ import dagger.android.DaggerApplication
 import mohammad.mohammadi.opeqesample.di.DaggerAppComponent
 import mohammad.mohammadi.opeqesample.util.Statics
 import mohammad.mohammadi.opeqesample.util.Statics.jsonFile
-import mohammad.mohammadi.opeqesample.util.loadJSONFromAssets
 
 class OpeqeApplication: DaggerApplication()
 {
