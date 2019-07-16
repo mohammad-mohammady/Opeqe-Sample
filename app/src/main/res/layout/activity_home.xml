@@ -76,7 +76,7 @@
                 android:inputType="textPersonName"
                 android:hint="@string/restaurants_dishes"
                 android:padding="4pt"
-                android:background="@color/grey_200"
+                android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:textColorHint="@color/grey_600"
                 android:drawableLeft="@drawable/magnify"
